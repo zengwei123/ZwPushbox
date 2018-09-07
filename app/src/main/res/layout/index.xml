@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.example.zengwei.zwpushbox.CustomView.TypeTextView
+                android:id="@+id/sound"
+                android:layout_weight="1"
+                android:text="\ue050"
+                android:textSize="23sp"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <com.example.zengwei.zwpushbox.CustomView.TypeTextView
+                android:id="@+id/Level"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23sp"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical|right"
+                android:text="第1关" />
+        </LinearLayout>
+        <com.example.zengwei.zwpushbox.CustomView.TypeTextView
+            android:id="@+id/item"
+            android:layout_weight="1"
+            android:text="\uea9f"
+            android:textSize="23sp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <com.example.zengwei.zwpushbox.CustomView.TypeTextView
+            android:id="@+id/sum"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="15步"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <com.example.zengwei.zwpushbox.Page.Game.ZwPushboxView
+        android:id="@+id/ZwPushboxView"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <com.example.zengwei.zwpushbox.CustomView.TypeTextView
+            android:id="@+id/left"
+            android:layout_weight="1"
+            android:text="\uf060"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <com.example.zengwei.zwpushbox.CustomView.TypeTextView
+            android:id="@+id/next"
+            android:layout_weight="1"
+            android:text="\uf3fd"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <com.example.zengwei.zwpushbox.CustomView.TypeTextView
+            android:id="@+id/Reset"
+            android:layout_weight="1"
+            android:text="\ue627"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <com.example.zengwei.zwpushbox.CustomView.TypeTextView
+            android:id="@+id/right"
+            android:layout_weight="1"
+            android:text="\ue910"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:clickable="true"
+        android:padding="40dp"
+        android:background="#cccccc"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="24dp"
+            android:text="关卡选择"
+            android:gravity="center"
+            android:textColor="#2B2B2B"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="40dp"
+            android:id="@+id/PushboxRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</RelativeLayout>

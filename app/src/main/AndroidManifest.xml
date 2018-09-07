@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zengwei.zwpushbox">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 手机震动权限 ，用于广告震动效果 震动反馈 sdk required-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ps"
+        android:label="老汉推箱"
+        android:roundIcon="@drawable/ps"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity" android:icon="@drawable/ps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Page.Index.IndexActivity"></activity>
+        <activity android:name=".Page.anwo.Anwo" android:hardwareAccelerated="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"></activity>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.zengwei.zwpushbox"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

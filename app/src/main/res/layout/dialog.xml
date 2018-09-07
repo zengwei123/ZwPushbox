@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <com.example.zengwei.zwpushbox.CustomView.TypeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="恭喜过关!"
+        android:textSize="20sp" />
+
+    <com.example.zengwei.zwpushbox.CustomView.TypeTextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="22步-88秒"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.example.zengwei.zwpushbox.CustomView.TypeTextView
+            android:id="@+id/quxiao"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="\ue3a7重来一次"
+            android:textSize="20sp" />
+        <com.example.zengwei.zwpushbox.CustomView.TypeTextView
+            android:id="@+id/next"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="\ue1ad下一关"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
